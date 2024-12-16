@@ -1,5 +1,10 @@
+using Api.Middleware;
 using Api.Services;
+using Application.Behaviours;
+using Application.Commands.Hotel.Update;
 using Domain;
+using FluentValidation;
+using MediatR;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
@@ -14,6 +19,10 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+builder.Services.AddMediatR(_ => _.RegisterServicesFromAssemblies(typeof(UpdateHotelCommand).Assembly));
+builder.Services.AddValidatorsFromAssembly(typeof(UpdateHotelCommand).Assembly);
+builder.Services.AddTransient(typeof(IPipelineBehavior<,>), typeof(ValidationBehaviour<,>));
 
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
 {
@@ -55,6 +64,8 @@ builder.Services.AddAuthorization(options =>
 builder.Services.AddSingleton<JwtHandler>();
 
 var app = builder.Build();
+
+app.UseMiddleware<ExceptionMiddleware>();
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
