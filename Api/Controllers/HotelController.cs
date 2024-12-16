@@ -12,14 +12,14 @@ namespace Api.Controllers;
 public class HotelController : BaseApiController
 {
     [HttpPost]
-    //[Authorize(Policy = "OnlyAdmin")]
+    [Authorize(Policy = "OnlyAdmin")]
     public async Task<IActionResult> CreateHotel([FromBody] CreateHotelCommand command)
     {
         return HandleResult(await Mediator.Send(command));
     }
 
     [HttpPut("{id}")]
-    //[Authorize(Policy = "OnlyAdmin")]
+    [Authorize(Policy = "OnlyAdmin")]
     public async Task<IActionResult> UpdateHotel(int id, [FromBody] UpdateHotelCommand command)
     {
         command.Id = id;
@@ -27,7 +27,7 @@ public class HotelController : BaseApiController
     }
 
     [HttpPut("activate/{id}")]
-    //[Authorize(Policy = "OnlyAdmin")]
+    [Authorize(Policy = "OnlyAdmin")]
     public async Task<IActionResult> ToggleHotel(int id)
     {
         ToggleHotelCommand command = new() { Id = id };
@@ -35,7 +35,7 @@ public class HotelController : BaseApiController
     }
 
     [HttpPost("assign/{id}")]
-    //[Authorize(Policy = "OnlyAdmin")]
+    [Authorize(Policy = "OnlyAdmin")]
     public async Task<IActionResult> AssignRoom(int id, [FromBody] AssignRoomHotelCommand command)
     {
         command.HotelId = id;

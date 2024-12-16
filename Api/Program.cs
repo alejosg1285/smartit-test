@@ -1,9 +1,12 @@
+using Api.Extensions;
 using Api.Middleware;
 using Api.Services;
 using Application.Behaviours;
 using Application.Commands.Hotel.Update;
+using Application.Interfaces;
 using Domain;
 using FluentValidation;
+using Infrastructure.Services;
 using MediatR;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
@@ -23,6 +26,8 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddMediatR(_ => _.RegisterServicesFromAssemblies(typeof(UpdateHotelCommand).Assembly));
 builder.Services.AddValidatorsFromAssembly(typeof(UpdateHotelCommand).Assembly);
 builder.Services.AddTransient(typeof(IPipelineBehavior<,>), typeof(ValidationBehaviour<,>));
+builder.Services.AddFluentEmail(builder.Configuration);
+builder.Services.AddScoped<IEmailService, EmailService>();
 
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
 {

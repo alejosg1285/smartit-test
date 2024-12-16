@@ -404,6 +404,102 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "List All",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7036/api/Book/list",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7036",
+							"path": [
+								"api",
+								"Book",
+								"list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Book Detail",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7036/api/Book/detail/6",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7036",
+							"path": [
+								"api",
+								"Book",
+								"detail",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Book",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"startBook\": \"2024-12-16\",\r\n  \"endBook\": \"2024-12-18\",\r\n  \"hotelRoomId\": 1,\r\n  \"contact\": {\r\n    \"name\": \"test\",\r\n    \"lastName\": \"contact\",\r\n    \"phoneNumber\": \"3516446252\"\r\n  },\r\n  \"passengers\": [\r\n    {\r\n      \"name\": \"guest\",\r\n      \"lastName\": \"one\",\r\n      \"genre\": 1,\r\n      \"identificationType\": \"CC\",\r\n      \"identificationNumber\": \"5684254\",\r\n      \"email\": \"kal_el1285@hotmail.com\",\r\n      \"phoneNumber\": \"6425462246\"\r\n    }\r\n  ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7036/api/Book",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7036",
+							"path": [
+								"api",
+								"Book"
+							]
+						}
+					},
+					"response": []
 				}
 			]
 		}
