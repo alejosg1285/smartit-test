@@ -5,7 +5,7 @@ DotNet version: 8.0.206
 
 ### Configuración inicial
 
-Actualizar la cadena de conexión a la base de datos en el archivo *appsettings.Development.json* ubicado en la ruta `backend\Api`
+Replace the database connnection string in the file *appsettings.Development.json* locate in the path `.\Api`
 
 ```
 "ConnectionStrings": {
@@ -14,15 +14,18 @@ Actualizar la cadena de conexión a la base de datos en el archivo *appsettings.
 ```
 
 ### Ejecutar migraciones
-En la consola de comandos ubicarse a nivel de la carpeta `backend` del proyecto y ejecutar el siguiente comando:
+In the console line get inside in the folder a the same level of the project `.\`  and execute the next command:
 ```
 backend>dotnet ef database update -s Api -p Persistence
 ```
-Si la conexión a la base de datos es satisfactoria deben verse creadas las tablas definidas por las migraciones.
+If the database connection is successful the tables should be created that were defined by the migrations.
 
 ### Ejecutar aplicación
-En la consola de comandos ubicarse a nivel de la carpeta `backend\Api` del proyecto y ejecutar el siguiente comando:
+In the command line get inside the folder `.\Api` of the project and execute the next command:
 ```
 backend>dotnet run
 ```
-La aplicación se ejecutará por defecto en el puerto `7036`
+The application run en the port `7036`
+
+### Endpoints
+The folder `Endpoints` containts a Postman collection of the endpoints created in the project
