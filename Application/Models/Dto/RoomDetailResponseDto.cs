@@ -1,17 +1,20 @@
-﻿namespace Application.Models.Dto;
+﻿using Domain;
+
+namespace Application.Models.Dto;
 
 /// <summary>
-/// Information response of the room
+/// Detail information of the room
 /// </summary>
 /// <param name="Id">Identification of the room</param>
 /// <param name="Name">Name of the room</param>
 /// <param name="Description">Description of the room</param>
 /// <param name="Capacity">Number of person per room</param>
 /// <param name="TypeRoom">Type of the room</param>
-/// <param name="Price">Price bfore taxes of the room</param>
+/// <param name="Price">Price before taxes of the room</param>
 /// <param name="Taxes">Taxes of the room</param>
 /// <param name="Location">Location of the room</param>
-public record RoomResponseDto
+/// <param name="Hotels"><inheritdoc cref="HotelResponseDto" /></param>
+public record RoomDetailResponseDto
 (
     int Id,
     string? Name,
@@ -20,5 +23,6 @@ public record RoomResponseDto
     string? TypeRoom,
     decimal Price,
     decimal Taxes,
-    string? Location
+    string? Location,
+    List<HotelResponseDto> Hotels
 );

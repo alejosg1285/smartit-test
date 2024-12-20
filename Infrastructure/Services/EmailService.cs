@@ -23,18 +23,15 @@ public class EmailService(IFluentEmail fluentEmail, IOptions<EmailSettings> conf
             client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue(@"Basic", base64String);
 
 
-            MultipartFormDataContent postData = new MultipartFormDataContent();
-            postData.Add(new StringContent(_options.Value.Email), "from");
-            postData.Add(new StringContent(emailMetadata.ToAddress), "to");
-            postData.Add(new StringContent(emailMetadata.Subject), "subject");
-            postData.Add(new StringContent(emailMetadata.Body), "html");
+            MultipartFormDataContent postData = new()
+            {
+                { new StringContent(_options.Value.Email), "from" },
+                { new StringContent(emailMetadata.ToAddress), "to" },
+                { new StringContent(emailMetadata.Subject), "subject" },
+                { new StringContent(emailMetadata.Body), "html" }
+            };
             var DomainName = _options.Value.Domain;
             using HttpResponseMessage request = await client.PostAsync("https://api.mailgun.net/v3/" + DomainName + "/messages", postData);
-
-            //await _fluentEmail.To(emailMetadata.ToAddress)
-            //    .Subject(emailMetadata.Subject)
-            //    .Body(emailMetadata.Body)
-            //    .SendAsync();
         }
         catch (Exception ex)
         {

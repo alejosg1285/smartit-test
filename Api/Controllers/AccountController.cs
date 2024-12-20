@@ -14,6 +14,11 @@ public class AccountController(UserManager<AppUser> userManager, JwtHandler jwtH
     private readonly UserManager<AppUser> _userManager = userManager;
     private readonly JwtHandler _jwtHandler = jwtHandler;
 
+    /// <summary>
+    /// Register a new user
+    /// </summary>
+    /// <inheritdoc cref="UserRegistrationDto"/>
+    /// <returns></returns>
     [HttpPost("register")]
     public async Task<IActionResult> Register([FromBody] UserRegistrationDto userDto)
     {
@@ -36,6 +41,11 @@ public class AccountController(UserManager<AppUser> userManager, JwtHandler jwtH
         return StatusCode(201);
     }
 
+    /// <summary>
+    /// Authenticate the user by E-mail and Password
+    /// </summary>
+    /// <inheritdoc cref="LoginDto"/>
+    /// <returns><inheritdoc cref="LoginResponseDto" /></returns>
     [HttpPost("authenticate")]
     public async Task<IActionResult> Authenticate([FromBody] LoginDto loginDto)
     {

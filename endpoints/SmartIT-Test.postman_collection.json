@@ -16,7 +16,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"displayName\": \"Admin Hotel\",\r\n  \"email\": \"kal_el1285@hotmail.com\",\r\n  \"password\": \"Pa$$w0rd\",\r\n  \"phoneNumber\": \"301464346\",\r\n  \"roleName\": \"Admin\"\r\n}",
+							"raw": "{\r\n  \"displayName\": \"Admin Hotel 2\",\r\n  \"email\": \"kal_el1285@hotmail.com\",\r\n  \"password\": \"Pa$$w0rd\",\r\n  \"phoneNumber\": \"301464346\",\r\n  \"roleName\": \"Admin\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -24,12 +24,13 @@
 							}
 						},
 						"url": {
-							"raw": "https://localhost:7036/api/Account/register",
-							"protocol": "https",
+							"raw": "http://asg1285.runasp.net/api/Account/register",
+							"protocol": "http",
 							"host": [
-								"localhost"
+								"asg1285",
+								"runasp",
+								"net"
 							],
-							"port": "7036",
 							"path": [
 								"api",
 								"Account",
@@ -54,12 +55,13 @@
 							}
 						},
 						"url": {
-							"raw": "https://localhost:7036/api/Account/register",
-							"protocol": "https",
+							"raw": "http://asg1285.runasp.net/api/Account/register",
+							"protocol": "http",
 							"host": [
-								"localhost"
+								"asg1285",
+								"runasp",
+								"net"
 							],
-							"port": "7036",
 							"path": [
 								"api",
 								"Account",
@@ -84,12 +86,13 @@
 							}
 						},
 						"url": {
-							"raw": "https://localhost:7036/api/Account/authenticate",
-							"protocol": "https",
+							"raw": "http://asg1285.runasp.net/api/Account/authenticate",
+							"protocol": "http",
 							"host": [
-								"localhost"
+								"asg1285",
+								"runasp",
+								"net"
 							],
-							"port": "7036",
 							"path": [
 								"api",
 								"Account",
@@ -105,14 +108,6 @@
 			"name": "Hotel",
 			"item": [
 				{
-					"name": "New Request",
-					"request": {
-						"method": "GET",
-						"header": []
-					},
-					"response": []
-				},
-				{
 					"name": "Create Hotel",
 					"request": {
 						"auth": {
@@ -120,7 +115,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiY3liZXJ2cmctNTgyMUBob3RtYWlsLmNvbSIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IlRyYXZlbGxlciIsImV4cCI6MTczNDMwMjUxNCwiaXNzIjoiSG90ZWxUZXN0IiwiYXVkIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NzAzNiJ9.4Q_0ggDHx2yjc9GBhJZJ8fiYxeum5gjyMJEZFQ2iuls",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoia2FsX2VsMTI4NUBob3RtYWlsLmNvbSIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IkFkbWluIiwiZXhwIjoxNzM0NDg5NjY1LCJpc3MiOiJIb3RlbFRlc3QiLCJhdWQiOiJodHRwczovL2xvY2FsaG9zdDo3MDM2In0.S235S8GlvLA3hpp2vW9woqY0FlqpsUkAA240Tmfu44Q",
 									"type": "string"
 								}
 							]
@@ -129,7 +124,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"name\": \"Hotel First\",\r\n  \"description\": \"The oldest hotel in the town\",\r\n  \"address\": \"Street 122\",\r\n  \"city\": \"Danver\"\r\n}",
+							"raw": "{\r\n  \"name\": \"Second First\",\r\n  \"description\": \"The most modern hotel in the town\",\r\n  \"address\": \"Street 122\",\r\n  \"city\": \"Houston\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -137,12 +132,13 @@
 							}
 						},
 						"url": {
-							"raw": "https://localhost:7036/api/Hotel",
-							"protocol": "https",
+							"raw": "http://asg1285.runasp.net/api/Hotel",
+							"protocol": "http",
 							"host": [
-								"localhost"
+								"asg1285",
+								"runasp",
+								"net"
 							],
-							"port": "7036",
 							"path": [
 								"api",
 								"Hotel"
@@ -159,7 +155,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiY3liZXJ2cmctNTgyMUBob3RtYWlsLmNvbSIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IlRyYXZlbGxlciIsImV4cCI6MTczNDMwMjUxNCwiaXNzIjoiSG90ZWxUZXN0IiwiYXVkIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NzAzNiJ9.4Q_0ggDHx2yjc9GBhJZJ8fiYxeum5gjyMJEZFQ2iuls",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoia2FsX2VsMTI4NUBob3RtYWlsLmNvbSIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IkFkbWluIiwiZXhwIjoxNzM0NDkwMzYyLCJpc3MiOiJIb3RlbFRlc3QiLCJhdWQiOiJodHRwczovL2xvY2FsaG9zdDo3MDM2In0.JvZ57E7t0Cbrha5jXNC9lcjVDR17atUjRWoFAbYYWR4",
 									"type": "string"
 								}
 							]
@@ -168,7 +164,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"roomId\": 3\r\n}",
+							"raw": "{\r\n  \"roomId\": 4\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -176,17 +172,18 @@
 							}
 						},
 						"url": {
-							"raw": "https://localhost:7036/api/Hotel/assign/1",
-							"protocol": "https",
+							"raw": "http://asg1285.runasp.net/api/Hotel/assign/2",
+							"protocol": "http",
 							"host": [
-								"localhost"
+								"asg1285",
+								"runasp",
+								"net"
 							],
-							"port": "7036",
 							"path": [
 								"api",
 								"Hotel",
 								"assign",
-								"1"
+								"2"
 							]
 						}
 					},
@@ -200,16 +197,16 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiY3liZXJ2cmctNTgyMUBob3RtYWlsLmNvbSIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IlRyYXZlbGxlciIsImV4cCI6MTczNDMwMjUxNCwiaXNzIjoiSG90ZWxUZXN0IiwiYXVkIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NzAzNiJ9.4Q_0ggDHx2yjc9GBhJZJ8fiYxeum5gjyMJEZFQ2iuls",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoia2FsX2VsMTI4NUBob3RtYWlsLmNvbSIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IkFkbWluIiwiZXhwIjoxNzM0NDg5NjY1LCJpc3MiOiJIb3RlbFRlc3QiLCJhdWQiOiJodHRwczovL2xvY2FsaG9zdDo3MDM2In0.S235S8GlvLA3hpp2vW9woqY0FlqpsUkAA240Tmfu44Q",
 									"type": "string"
 								}
 							]
 						},
-						"method": "PUT",
+						"method": "PATCH",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"name\": \"Hotel First\",\r\n  \"description\": \"The oldest hotel in the town\",\r\n  \"address\": \"Street 122\",\r\n  \"city\": \"Colorado\"\r\n}",
+							"raw": "{\r\n  \"name\": \"Second First\",\r\n  \"description\": \"The most modern hotel in the town\",\r\n  \"address\": \"Street 122 5th avenue\",\r\n  \"city\": \"Houston\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -217,16 +214,17 @@
 							}
 						},
 						"url": {
-							"raw": "https://localhost:7036/api/Hotel/1",
-							"protocol": "https",
+							"raw": "http://asg1285.runasp.net/api/Hotel/2",
+							"protocol": "http",
 							"host": [
-								"localhost"
+								"asg1285",
+								"runasp",
+								"net"
 							],
-							"port": "7036",
 							"path": [
 								"api",
 								"Hotel",
-								"1"
+								"2"
 							]
 						}
 					},
@@ -240,34 +238,91 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiY3liZXJ2cmctNTgyMUBob3RtYWlsLmNvbSIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IlRyYXZlbGxlciIsImV4cCI6MTczNDMwMjUxNCwiaXNzIjoiSG90ZWxUZXN0IiwiYXVkIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NzAzNiJ9.4Q_0ggDHx2yjc9GBhJZJ8fiYxeum5gjyMJEZFQ2iuls",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoia2FsX2VsMTI4NUBob3RtYWlsLmNvbSIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IkFkbWluIiwiZXhwIjoxNzM0NjY0NTMwLCJpc3MiOiJIb3RlbFRlc3QiLCJhdWQiOiJodHRwczovL2xvY2FsaG9zdDo3MDM2In0.4ayrHgtsECxUMc0r1INPNfmDGCyCYjPXEby9cqooA6c",
 									"type": "string"
 								}
 							]
 						},
-						"method": "PUT",
+						"method": "PATCH",
 						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n  \"name\": \"Hotel First\",\r\n  \"description\": \"The oldest hotel in the town\",\r\n  \"address\": \"Street 122\",\r\n  \"city\": \"Colorado\"\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
 						"url": {
-							"raw": "https://localhost:7036/api/Hotel/activate/1",
-							"protocol": "https",
+							"raw": "http://asg1285.runasp.net/api/Hotel/activate/1",
+							"protocol": "http",
 							"host": [
-								"localhost"
+								"asg1285",
+								"runasp",
+								"net"
 							],
-							"port": "7036",
 							"path": [
 								"api",
 								"Hotel",
 								"activate",
 								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List All",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoia2FsX2VsMTI4NUBob3RtYWlsLmNvbSIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IkFkbWluIiwiZXhwIjoxNzM0NjY0NTMwLCJpc3MiOiJIb3RlbFRlc3QiLCJhdWQiOiJodHRwczovL2xvY2FsaG9zdDo3MDM2In0.4ayrHgtsECxUMc0r1INPNfmDGCyCYjPXEby9cqooA6c",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://asg1285.runasp.net/api/Hotel/list",
+							"protocol": "http",
+							"host": [
+								"asg1285",
+								"runasp",
+								"net"
+							],
+							"path": [
+								"api",
+								"Hotel",
+								"list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Hotel Detail",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoia2FsX2VsMTI4NUBob3RtYWlsLmNvbSIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IkFkbWluIiwiZXhwIjoxNzM0NjY0NTMwLCJpc3MiOiJIb3RlbFRlc3QiLCJhdWQiOiJodHRwczovL2xvY2FsaG9zdDo3MDM2In0.4ayrHgtsECxUMc0r1INPNfmDGCyCYjPXEby9cqooA6c",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://asg1285.runasp.net/api/Hotel/detail/2",
+							"protocol": "http",
+							"host": [
+								"asg1285",
+								"runasp",
+								"net"
+							],
+							"path": [
+								"api",
+								"Hotel",
+								"detail",
+								"2"
 							]
 						}
 					},
@@ -281,11 +336,21 @@
 				{
 					"name": "Create Room",
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoia2FsX2VsMTI4NUBob3RtYWlsLmNvbSIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IkFkbWluIiwiZXhwIjoxNzM0NDg5NjY1LCJpc3MiOiJIb3RlbFRlc3QiLCJhdWQiOiJodHRwczovL2xvY2FsaG9zdDo3MDM2In0.S235S8GlvLA3hpp2vW9woqY0FlqpsUkAA240Tmfu44Q",
+									"type": "string"
+								}
+							]
+						},
 						"method": "POST",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"name\": \"Room First\",\r\n  \"description\": \"The oldest room\",\r\n  \"capacity\": 4,\r\n  \"typeRoom\": \"Family\",\r\n  \"price\": 13.5,\r\n  \"taxes\": 1.29,\r\n  \"location\": \"Basement\",\r\n  \"hotelId\": 1\r\n}",
+							"raw": "{\r\n  \"name\": \"Room Second\",\r\n  \"description\": \"The new room\",\r\n  \"capacity\": 2,\r\n  \"typeRoom\": \"Personal\",\r\n  \"price\": 13.5,\r\n  \"taxes\": 1.29,\r\n  \"location\": \"Top\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -293,12 +358,13 @@
 							}
 						},
 						"url": {
-							"raw": "https://localhost:7036/api/Room",
-							"protocol": "https",
+							"raw": "http://asg1285.runasp.net/api/Room",
+							"protocol": "http",
 							"host": [
-								"localhost"
+								"asg1285",
+								"runasp",
+								"net"
 							],
-							"port": "7036",
 							"path": [
 								"api",
 								"Room"
@@ -310,11 +376,21 @@
 				{
 					"name": "Update Room",
 					"request": {
-						"method": "PUT",
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoia2FsX2VsMTI4NUBob3RtYWlsLmNvbSIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IkFkbWluIiwiZXhwIjoxNzM0NDg5NjY1LCJpc3MiOiJIb3RlbFRlc3QiLCJhdWQiOiJodHRwczovL2xvY2FsaG9zdDo3MDM2In0.S235S8GlvLA3hpp2vW9woqY0FlqpsUkAA240Tmfu44Q",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"name\": \"Room First\",\r\n  \"description\": \"The oldest room\",\r\n  \"capacity\": 4,\r\n  \"typeRoom\": \"Family\",\r\n  \"price\": 18.5,\r\n  \"taxes\": 1.29,\r\n  \"location\": \"Basement\",\r\n  \"hotelId\": 1\r\n}",
+							"raw": "{\r\n  \"name\": \"Room First\",\r\n  \"description\": \"The oldest room\",\r\n  \"capacity\": 2,\r\n  \"typeRoom\": \"Personal\",\r\n  \"price\": 10.5,\r\n  \"taxes\": 1.29,\r\n  \"location\": \"Top\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -322,16 +398,17 @@
 							}
 						},
 						"url": {
-							"raw": "https://localhost:7036/api/Room/3",
-							"protocol": "https",
+							"raw": "http://asg1285.runasp.net/api/Room/4",
+							"protocol": "http",
 							"host": [
-								"localhost"
+								"asg1285",
+								"runasp",
+								"net"
 							],
-							"port": "7036",
 							"path": [
 								"api",
 								"Room",
-								"3"
+								"4"
 							]
 						}
 					},
@@ -340,28 +417,95 @@
 				{
 					"name": "Activate/Inactivate Room",
 					"request": {
-						"method": "PUT",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "",
-							"options": {
-								"raw": {
-									"language": "json"
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoia2FsX2VsMTI4NUBob3RtYWlsLmNvbSIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IkFkbWluIiwiZXhwIjoxNzM0NjY0NTMwLCJpc3MiOiJIb3RlbFRlc3QiLCJhdWQiOiJodHRwczovL2xvY2FsaG9zdDo3MDM2In0.4ayrHgtsECxUMc0r1INPNfmDGCyCYjPXEby9cqooA6c",
+									"type": "string"
 								}
-							}
+							]
 						},
+						"method": "PATCH",
+						"header": [],
 						"url": {
-							"raw": "https://localhost:7036/api/Room/activate/3",
-							"protocol": "https",
+							"raw": "http://asg1285.runasp.net/api/Room/activate/4",
+							"protocol": "http",
 							"host": [
-								"localhost"
+								"asg1285",
+								"runasp",
+								"net"
 							],
-							"port": "7036",
 							"path": [
 								"api",
 								"Room",
 								"activate",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List All",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiY3liZXJ2cmctNTgyMUBob3RtYWlsLmNvbSIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IlRyYXZlbGxlciIsImV4cCI6MTczNDY2NjYxOCwiaXNzIjoiSG90ZWxUZXN0IiwiYXVkIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NzAzNiJ9.ntfStH_ukvOxe7GUbMK7zJ2N2BrEbaf95tWjoqQ3x4U",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://asg1285.runasp.net/api/Room/list",
+							"protocol": "http",
+							"host": [
+								"asg1285",
+								"runasp",
+								"net"
+							],
+							"path": [
+								"api",
+								"Room",
+								"list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Detail Room",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiY3liZXJ2cmctNTgyMUBob3RtYWlsLmNvbSIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IlRyYXZlbGxlciIsImV4cCI6MTczNDY2NjYxOCwiaXNzIjoiSG90ZWxUZXN0IiwiYXVkIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NzAzNiJ9.ntfStH_ukvOxe7GUbMK7zJ2N2BrEbaf95tWjoqQ3x4U",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://asg1285.runasp.net/api/Room/detail/3",
+							"protocol": "http",
+							"host": [
+								"asg1285",
+								"runasp",
+								"net"
+							],
+							"path": [
+								"api",
+								"Room",
+								"detail",
 								"3"
 							]
 						}
@@ -379,11 +523,21 @@
 						"disableBodyPruning": true
 					},
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiY3liZXJ2cmctNTgyMUBob3RtYWlsLmNvbSIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IlRyYXZlbGxlciIsImV4cCI6MTczNDQ5MDQ3MywiaXNzIjoiSG90ZWxUZXN0IiwiYXVkIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NzAzNiJ9.arAL-lzru-d-q-O0o1ETH_olbGzBHsHAIb6UFAMrlnY",
+									"type": "string"
+								}
+							]
+						},
 						"method": "GET",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"startSearch\": \"2024-12-16T03:15:23.629Z\",\r\n  \"endSearch\": \"2024-12-18T03:15:23.629Z\",\r\n  \"city\": \"colorado\",\r\n  \"capacity\": 3\r\n}",
+							"raw": "{\r\n  \"startSearch\": \"2024-12-16T03:15:23.629Z\",\r\n  \"endSearch\": \"2024-12-18T03:15:23.629Z\",\r\n  \"city\": \"houston\",\r\n  \"capacity\": 2\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -391,12 +545,13 @@
 							}
 						},
 						"url": {
-							"raw": "https://localhost:7036/api/Book",
-							"protocol": "https",
+							"raw": "http://asg1285.runasp.net/api/Book",
+							"protocol": "http",
 							"host": [
-								"localhost"
+								"asg1285",
+								"runasp",
+								"net"
 							],
-							"port": "7036",
 							"path": [
 								"api",
 								"Book"
@@ -407,28 +562,27 @@
 				},
 				{
 					"name": "List All",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoia2FsX2VsMTI4NUBob3RtYWlsLmNvbSIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IkFkbWluIiwiZXhwIjoxNzM0NDkwNjE0LCJpc3MiOiJIb3RlbFRlc3QiLCJhdWQiOiJodHRwczovL2xvY2FsaG9zdDo3MDM2In0.JrFrXxG_0TVMgFUjmT6RHqhr_d-zxBaDa8uHdKGJI18",
+									"type": "string"
+								}
+							]
+						},
 						"method": "GET",
 						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
 						"url": {
-							"raw": "https://localhost:7036/api/Book/list",
-							"protocol": "https",
+							"raw": "http://asg1285.runasp.net/api/Book/list",
+							"protocol": "http",
 							"host": [
-								"localhost"
+								"asg1285",
+								"runasp",
+								"net"
 							],
-							"port": "7036",
 							"path": [
 								"api",
 								"Book",
@@ -440,33 +594,32 @@
 				},
 				{
 					"name": "Book Detail",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoia2FsX2VsMTI4NUBob3RtYWlsLmNvbSIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IkFkbWluIiwiZXhwIjoxNzM0NDkwNjE0LCJpc3MiOiJIb3RlbFRlc3QiLCJhdWQiOiJodHRwczovL2xvY2FsaG9zdDo3MDM2In0.JrFrXxG_0TVMgFUjmT6RHqhr_d-zxBaDa8uHdKGJI18",
+									"type": "string"
+								}
+							]
+						},
 						"method": "GET",
 						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
 						"url": {
-							"raw": "https://localhost:7036/api/Book/detail/6",
-							"protocol": "https",
+							"raw": "http://asg1285.runasp.net/api/Book/detail/11",
+							"protocol": "http",
 							"host": [
-								"localhost"
+								"asg1285",
+								"runasp",
+								"net"
 							],
-							"port": "7036",
 							"path": [
 								"api",
 								"Book",
 								"detail",
-								"6"
+								"11"
 							]
 						}
 					},
@@ -475,11 +628,21 @@
 				{
 					"name": "Create Book",
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiY3liZXJ2cmctNTgyMUBob3RtYWlsLmNvbSIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IlRyYXZlbGxlciIsImV4cCI6MTczNDQ5MDQ3MywiaXNzIjoiSG90ZWxUZXN0IiwiYXVkIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NzAzNiJ9.arAL-lzru-d-q-O0o1ETH_olbGzBHsHAIb6UFAMrlnY",
+									"type": "string"
+								}
+							]
+						},
 						"method": "POST",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"startBook\": \"2024-12-16\",\r\n  \"endBook\": \"2024-12-18\",\r\n  \"hotelRoomId\": 1,\r\n  \"contact\": {\r\n    \"name\": \"test\",\r\n    \"lastName\": \"contact\",\r\n    \"phoneNumber\": \"3516446252\"\r\n  },\r\n  \"passengers\": [\r\n    {\r\n      \"name\": \"guest\",\r\n      \"lastName\": \"one\",\r\n      \"genre\": 1,\r\n      \"identificationType\": \"CC\",\r\n      \"identificationNumber\": \"5684254\",\r\n      \"email\": \"kal_el1285@hotmail.com\",\r\n      \"phoneNumber\": \"6425462246\"\r\n    }\r\n  ]\r\n}",
+							"raw": "{\r\n  \"startBook\": \"2024-12-16\",\r\n  \"endBook\": \"2024-12-18\",\r\n  \"hotelRoomId\": 4,\r\n  \"contact\": {\r\n    \"name\": \"test\",\r\n    \"lastName\": \"contact\",\r\n    \"phoneNumber\": \"3516446252\"\r\n  },\r\n  \"passengers\": [\r\n    {\r\n      \"name\": \"guest\",\r\n      \"lastName\": \"one\",\r\n      \"genre\": 1,\r\n      \"identificationType\": \"CC\",\r\n      \"identificationNumber\": \"5684254\",\r\n      \"email\": \"kal_el1285@hotmail.com\",\r\n      \"phoneNumber\": \"6425462246\"\r\n    }\r\n  ]\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -487,12 +650,13 @@
 							}
 						},
 						"url": {
-							"raw": "https://localhost:7036/api/Book",
-							"protocol": "https",
+							"raw": "http://asg1285.runasp.net/api/Book",
+							"protocol": "http",
 							"host": [
-								"localhost"
+								"asg1285",
+								"runasp",
+								"net"
 							],
-							"port": "7036",
 							"path": [
 								"api",
 								"Book"

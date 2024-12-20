@@ -48,12 +48,12 @@ public static class MappingDataExtension
 
     public static HotelResponseDto toDto(this Hotel hotel)
     {
-        return new HotelResponseDto(hotel.Name, hotel.Description, hotel.Address, hotel.City);
+        return new HotelResponseDto(hotel.Id, hotel.Name, hotel.Description, hotel.Address, hotel.City);
     }
 
     public static RoomResponseDto toDto(this Room room)
     {
-        return new RoomResponseDto(room.Name, room.Description, room.Capacity, room.TypeRoom, room.Price, room.Taxes, room.Location);
+        return new RoomResponseDto(room.Id, room.Name, room.Description, room.Capacity, room.TypeRoom, room.Price, room.Taxes, room.Location);
     }
 
     public static ContactResponseDto toDto(this Contact contact)
